@@ -94,8 +94,7 @@ $(document).ready(function(){
 			$(".correct-choices").text(" "+correct+" ");
 			$(".incorrect-choices").text(" "+incorrect+" ");
 			$(".parent-container").fadeIn(600);
-			$(".results").delay(600).fadeIn(600);
-			$(".progress").text("End of Quiz");	
+			$(".results").delay(600).fadeIn(600);	
 		}
 		$(".js-next").hide();
 		choice = "undefined";
@@ -132,9 +131,9 @@ $(document).ready(function(){
 		$(".parent-container").fadeOut(600);
 		$(".js-start-quiz").delay(600).fadeIn(600);
 		$(".js-choice-made").text("Make a Choice");
-		//$(".current-question").text(questionNo + " ");
-		//$(".correct").text(correct +" ");
-		//$(".incorrect").text(incorrect + " ");
+		$(".current-question").text(questionNo + " ");
+		$(".correct").text(correct +" ");
+		$(".incorrect").text(incorrect + " ");
 		//$(".js-submit-button").show();
 		//$(".next-button").text("Next");
 		//$(".status").show();
