@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="IT Quiz App">
+	<meta name="tags" content="app, quiz, it, computer science">
+	<title>IT Quiz</title>
+
+	<!-- CSS/Stylesheet Files-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+
+</head>
+<body>
+
+	<main role="main">
+		<div class="header">
+			<header class="nav">
+				<div class="instructions">
+					<h3><a></a></h3>
+				</div>
+				
+				<div class="logo">
+					<h1 class="logo-text">IT QUIZ</h1>
+				</div>
+				
+				<div class="new-game">
+					<h3><a>NEW GAME</a></h3>
+				</div>
+			</header>
+		</div>
+	</main>
+
+	<!-- QUESTION SECTION STARTS HERE -->
+	<section class="secton-question">
+		<div class="quiz-window js-quiz-window">
+			<div class="start-quiz js-start-quiz" id="container">
+				<div class="button" id="button-start">
+	    			<div id="dub-arrow">
+	    				<img src="img/dub-arrow.png" alt="" />
+	    			</div>
+	    			<a class="start-button" type="submit">Start</a>
+	  			</div>
+	  		</div>
+			
+			<div class="parent-container">
+
+				<div class="question-container js-question-container">	
+					<div class="question">
+						<p class="js-question"></p>
+					</div>
+					<div class="choices js-choices">
+						
+						<div class="button" id="button-choice">
+    						<div id="underline"></div>
+    						<a class="choice js-choice js-choice-1" type="submit">CHOICE 1</a>
+  						</div>
+						
+						<div class="button" id="button-choice">
+    						<div id="underline"></div>
+    						<a class="choice js-choice js-choice-2" type="submit">CHOICE 2</a>
+  						</div>
+
+  						<div class="button" id="button-choice">
+    						<div id="underline"></div>
+    						<a class="choice js-choice js-choice-3" type="submit">CHOICE 3</a>
+  						</div>
+
+  						<div class="button" id="button-choice">
+    						<div id="underline"></div>
+    						<a class="choice js-choice js-choice-4" type="submit">CHOICE 4</a>
+  						</div>
+
+  						<div class="selected-answer">
+  							<p class="js-choice-made color-white">Make a Choice!</p>
+  						</div>
+					</div>
+				</div>
+
+				<div class="results color-white">
+					<h1>QUIZ COMPLETED</h1>
+					<p>You made <span class="correct-choices"></span>correct choices and <span class="incorrect-choices"></span>incorrect choices.</p>
+					<h2>Thank You For Playing</h2>
+				</div>
+
+				<!--<div class="overlay-instructions color-white">
+					<h1>INSTRUCTIONS</h1>
+					<p>There are 4 Choices available for each question, shown on the screen, Select the one and click "Confirm".</p>
+					<p>Once you make a choice, You'll see result on screen.</p> 
+					<p>click on "Next" to move to next question.</p>
+					<p>You can always change your choice untill "Confirm" is not clicked</p>
+
+					<div class="close-instructions js-close-instructions">
+						<div class="button" id="button-close">
+    						<div id="slide"></div>
+    						<a class="close" type="submit">OK</a>
+  						</div>
+					</div>
+
+				</div> -->
+
+				<div class="status">
+					<div class="progress">
+						<p><span class="current-question"></span>out of 10</p>
+					</div>
+
+					<div class="submit-button js-submit-button">
+						<div class="button" id="button-confirm">
+    						<div id="slide"></div>
+    						<a class="confirm" type="submit">Confirm</a>
+  						</div>
+  						<p class="choice-error color-red font-small">please make a choice first</p>
+					</div>
+					
+					<div class="next js-next">
+						<div class="button" id="button-next">
+	    					<div id="dub-arrow">
+	    						<img src="img/dub-arrow.png" alt="" />
+	    					</div>
+	    					<a class="next-button" type="submit">Next</a>
+	  					</div>
+					</div>
+
+
+					<div class="score">
+						<p><span class="correct">0</span>Correct, <span class="incorrect">0</span>Incorrect</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	<!-- Javascript Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
